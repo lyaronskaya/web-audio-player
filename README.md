@@ -3,4 +3,4 @@
 [Демо](http://lyaronskaya.github.io/web-audio-player)
 
 
-Используется библиотека [Waveserver.js](https://github.com/katspaugh/wavesurfer.js) 
+Используется библиотека [Wavesurfer.js](https://github.com/katspaugh/wavesurfer.js), реализованная на Web Audio API
