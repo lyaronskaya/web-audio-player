@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>Music Player</title>
+	<link href='css/styles.css' rel='stylesheet' type='text/css'>
+	<link rel='stylesheet' href='css/font-awesome-4.3.0/css/font-awesome.min.css'>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+<div id="container" class="disabled">
+
+	<div id="cover-art">
+		<div id="cover-art-big">Drop your audio files here</div>
+	</div>
+
+	<div id="wave"></div>
+
+	<div id="control-bar">
+
+		<div class="player-control">
+			<div id="previous-button" title="Previous"><i class="fa fa-fast-backward"></i></div>
+			<div id="play-button" title="Play"><i class="fa fa-play"></i></div>
+			<div id="pause-button" title="Pause"><i class="fa fa-pause"></i></div>
+			<div id="stop-button" title="Stop"><i class="fa fa-stop"></i></div>
+			<div id="next-button" title="Next"><i class="fa fa-fast-forward"></i></div>
+			<div id="shuffle-button" title="Shuffle off"><i class="fa fa-random"></i></div>
+			<div id="repeat-button" title="Repeat off"><i class="fa fa-refresh"><span>1</span></i></div>
+		</div>
+
+		<div id="playlist">
+
+			<div id="track-details">
+				<div id="show-list" title="Show playlist"><i class="fa fa-list"></i></div>
+				<p id="track-desc">No tracks</p>
+				<p id="track-time">
+					<span id="current">-</span> / <span id="total">-</span>
+				</p>
+                <div id="track-equalize" title="Equalizer">
+                    <select id="equalizer" name="equalizer">
+                        <option value="pop">pop</option>
+                        <option value="rock">rock</option>
+                        <option value="jazz">jazz</option>
+                        <option value="classic">classic</option>
+                        <option value="normal" selected>normal</option>
+                    </select>
+                </div>
+
+			</div>
+
+			<div id="expand-bar" class="hidden">
+				<ul id="list"></ul>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="drop-zone" class="hidden">Drag &amp; Drop Files Here</div>
+
+</div>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/id3-minimized.js"></script>
+<script src="js/wavesurfer.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
